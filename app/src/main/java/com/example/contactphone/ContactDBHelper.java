@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ContactDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "contactdb";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String TABLE_NAME = "contact";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_NAME = "name";
