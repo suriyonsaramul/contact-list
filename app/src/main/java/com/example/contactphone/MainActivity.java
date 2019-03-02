@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.search_menu:
+                Intent it = new Intent(MainActivity.this, SearchContactActivity.class);
+                startActivity(it);
                 Toast.makeText(MainActivity.this, "Search Contact", Toast.LENGTH_LONG).show();
                 break;
         }

@@ -89,7 +89,7 @@ public class ContactDBHelper extends SQLiteOpenHelper {
 
         String sql = "SELECT * FROM " + TABLE_NAME
                 + " WHERE " + COLUMN_NAME + " LIKE '%" + name
-                + "'%";
+                + "%'";
 
         Cursor cursor = db.rawQuery(sql, null);
 

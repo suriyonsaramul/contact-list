@@ -52,12 +52,14 @@ public class AddContactActivity extends AppCompatActivity {
         edtName.setText("");
         edtPhone.setText("");
         edtName.requestFocus();
+
     }
 
     private void initComponent() {
         edtName = findViewById(R.id.edt_name);
         edtPhone = findViewById(R.id.edt_phone);
         btnAdd = findViewById(R.id.btn_add);
+        edtName.requestFocus();
 
         helper = new ContactDBHelper(AddContactActivity.this);
     }
